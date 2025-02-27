@@ -1,0 +1,22 @@
+{
+    "name": "oswaldocavalcante/twiliown",
+    "autoload": {
+        "psr-4": {
+            "Oswaldocavalcante\\Twiliown\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oswaldo Cavalcante",
+            "email": "jocmail@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "woocommerce/woocommerce": "^3.5"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}
