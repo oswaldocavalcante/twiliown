@@ -1,60 +1,60 @@
 # Twilio WhatsApp Notifier for WooCommerce
 
-Uma extensão para o plugin Back In Stock Notifier for WooCommerce que adiciona suporte a notificações via WhatsApp usando a API da Twilio.
+An extension for the Back In Stock Notifier for WooCommerce plugin that adds WhatsApp notification support using the Twilio API.
 
-## Descrição
+## Description
 
-Este plugin estende a funcionalidade do Back In Stock Notifier for WooCommerce, permitindo que os clientes recebam notificações via WhatsApp quando produtos que estavam fora de estoque voltam a estar disponíveis.
+This plugin extends the functionality of Back In Stock Notifier for WooCommerce, allowing customers to receive WhatsApp notifications when out-of-stock products become available again.
 
-## Funcionalidades
+## Features
 
-- Integração com a API do WhatsApp da Twilio
-- Configuração simplificada através do painel administrativo do WooCommerce
-- Suporte a números de telefone brasileiros (formatação automática)
-- Notificações automáticas quando produtos voltam ao estoque
+- Integration with Twilio WhatsApp API
+- Simple configuration through WooCommerce admin panel
+- Support for Brazilian phone numbers (automatic formatting)
+- Automatic notifications when products are back in stock
 
-## Requisitos
+## Requirements
 
-- WordPress 5.0 ou superior
-- WooCommerce 3.5 ou superior
+- WordPress 5.0 or higher
+- WooCommerce 3.5 or higher
 - Back In Stock Notifier for WooCommerce
-- Conta Twilio com acesso à API do WhatsApp
+- Twilio account with WhatsApp API access
 
-## Instalação
+## Installation
 
-1. Faça upload dos arquivos do plugin para a pasta `/wp-content/plugins/`
-2. Ative o plugin através do menu 'Plugins' no WordPress
-3. Configure suas credenciais da Twilio em WooCommerce > Configurações > Back In Stock Notifier > Twilio WhatsApp
+1. Upload the plugin files to the `/wp-content/plugins/` directory
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Configure your Twilio credentials in WooCommerce > Settings > Back In Stock Notifier > Twilio WhatsApp
 
-## Configuração
+## Configuration
 
-1. Acesse WooCommerce > Configurações > Back In Stock Notifier
-2. Na seção "Twilio WhatsApp", preencha:
+1. Go to WooCommerce > Settings > Back In Stock Notifier
+2. In the "Twilio WhatsApp" section, fill in:
    - Twilio Account SSID
    - Twilio Auth Token
-   - WhatsApp Sender Number (número do WhatsApp remetente)
+   - WhatsApp Sender Number (sender WhatsApp number)
 
-## Desenvolvimento
+## Development
 
-Para contribuir com o desenvolvimento:
+To contribute to development:
 
 ```bash
-# Clone o repositório
+# Clone the repository
 git clone https://github.com/oswaldocavalcante/twiliown
 
-# Instale as dependências
+# Install dependencies
 composer install
 ```
 
-## Dependências
+## Dependencies
 
-- woocommerce/woocommerce-stubs (desenvolvimento)
-- Back In Stock Notifier for WooCommerce (plugin principal)
+- woocommerce/woocommerce-stubs (development)
+- Back In Stock Notifier for WooCommerce (main plugin)
 
-## Licença
+## License
 
-GPL v2 ou posterior
+GPL v2 or later
 
-## Suporte
+## Support
 
-Para suporte, por favor abra uma issue no repositório do GitHub.
+For support, please open an issue on the GitHub repository.
