@@ -19,8 +19,8 @@ class Twilion
     {
         $plugin_admin = new TWN_Admin();
 
-        add_action('cwginstock_manual_email_sent',  array($plugin_admin, 'back_in_stock_whatsapp'), 10, 2);
         add_action('admin_init',                    array($plugin_admin, 'add_settings'));
+        add_action('cwginstock_manual_email_sent',  array($plugin_admin, 'back_in_stock_whatsapp'), 10, 2);
     }
 
     private function define_public_hooks()
