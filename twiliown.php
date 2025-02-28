@@ -29,16 +29,15 @@
 // If this file is called directly, abort.
 if (! defined('WPINC')) die;
 
-define('TWN_VERSION', '1.0.0');
+define('TWN_VERSION', '1.1.0');
 if (!defined('TWN_PLUGIN_FILE')) define('TWN_PLUGIN_FILE', __FILE__);
 define('TWN_ABSPATH', dirname(TWN_PLUGIN_FILE) . '/');
 define('TWN_URL', plugins_url('/', __FILE__));
 
-require plugin_dir_path(__FILE__) . 'includes/class-twilion.php';
-
-function run_twilion()
+require plugin_dir_path(__FILE__) . 'includes/class-twiliown.php';
+function run_twiliown()
 {
-    $plugin = new Twilion();
+    $plugin = new Twiliown();
 }
 
-run_twilion();
+run_twiliown();

@@ -1,6 +1,6 @@
 <?php
 
-class Twilion
+class Twiliown
 {
     public function __construct()
     {
@@ -19,8 +19,10 @@ class Twilion
     {
         $plugin_admin = new TWN_Admin();
 
+        add_action('before_woocommerce_init',       array($plugin_admin, 'declare_wc_compatibility'));
         add_action('admin_init',                    array($plugin_admin, 'add_settings'));
-        add_action('cwginstock_manual_email_sent',  array($plugin_admin, 'back_in_stock_whatsapp'), 10, 2);
+        add_action('cwginstock_notify_process',     array($plugin_admin, 'notify_batch'), 100, 1);
+        add_action('cwginstock_manual_email_sent',  array($plugin_admin, 'notify'), 10, 2);
     }
 
     private function define_public_hooks()
