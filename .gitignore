@@ -2,3 +2,12 @@
 wp-content/
 vendor/
 .vscode/launch.json
+twiliown.code-workspace
+/vendor/
+/node_modules/
+*.log
+*.cache
+*.tmp
+.env
+.idea/
+.vscode/

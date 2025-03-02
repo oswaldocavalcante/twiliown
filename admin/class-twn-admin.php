@@ -32,6 +32,7 @@ class TWN_Admin
     public function add_settings()
     {
         add_settings_section('cwg_section_twilio_whatsapp', __('Twilio WhatsApp',       'twiliown'),    array($this->settings, 'section_description'),    'cwginstocknotifier_settings');
+        
         add_settings_field('cwg_twilio_ssid',               __('Twilio Account SSID',   'twiliown'),    array($this->settings, 'cwg_twilio_ssid'),        'cwginstocknotifier_settings', 'cwg_section_twilio_whatsapp');
         add_settings_field('cwg_twilio_token',              __('Twilio Auth Token',     'twiliown'),    array($this->settings, 'cwg_twilio_token'),       'cwginstocknotifier_settings', 'cwg_section_twilio_whatsapp');
         add_settings_field('cwg_twilio_phone',              __('WhatsApp Sender Number','twiliown'),    array($this->settings, 'cwg_twilio_phone'),       'cwginstocknotifier_settings', 'cwg_section_twilio_whatsapp');
