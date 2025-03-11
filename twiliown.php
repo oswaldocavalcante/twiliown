@@ -11,7 +11,7 @@
  * Plugin Name:       Add-on: Twilio WhatsApp - Back In Stock Notifier for WooCommerce
  * Plugin URI:        https://github.com/oswaldocavalcante/
  * Description:       Adds Twilio WhatsApp notifications for the plugin 'Back In Stock Notifier for WooCommerce'.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            Oswaldo Cavalcante
  * Author URI:        https://oswaldocavalcante.com/
  * License:           GPL-2.0+
