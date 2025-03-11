@@ -63,7 +63,7 @@ class TWN_Admin
                 } 
                 else 
                 {
-                    $logger = new CWG_Instock_Logger('error', 'Seems this product has been out of stock, so no point in sending mail to the respective subscriber');
+                    $logger = new CWG_Instock_Logger('error', 'Seems this product has been out of stock, so no WhatsApp notification was sent.');
                     $logger->record_log();
                 }
             }

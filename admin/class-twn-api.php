@@ -28,6 +28,7 @@ class TWN_API
         if (!$this->user_phone)
         {
             $this->handle_notification_status($id, false, 'WhatsApp number invalid.');
+            return false;
         }
 
         if (get_post_meta($id, 'cwginstock_variation_id', true))
@@ -84,12 +85,12 @@ class TWN_API
         if ($success)
         {
             $api->mail_sent_status($id); // update mail sent status
-            $logger = new CWG_Instock_Logger('info', "Automatic Instock Mail Triggered for ID #$id : " . $message);
+            $logger = new CWG_Instock_Logger('info', "Automatic Instock WhatsApp Triggered for ID #$id : " . $message);
         }
         else
         {
             $api->mail_not_sent_status($id);
-            $logger = new CWG_Instock_Logger('error', "Failed to send Automatic Instock Mail for ID #$id : " . $message);
+            $logger = new CWG_Instock_Logger('error', "Failed to send Automatic Instock WhatsApp for ID #$id : " . $message);
         }
 
         $logger->record_log();

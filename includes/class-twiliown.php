@@ -27,8 +27,8 @@ class Twiliown
 
     private function define_public_hooks()
     {
-        $plugin_public = new TWN_Public();
+        // $plugin_public = new TWN_Public();
 
-        add_action('cwg_instock_after_email_field', array($plugin_public, 'hide_email_field'));
+        // add_action('cwg_instock_after_email_field', array($plugin_public, 'hide_email_field'));
     }
 }
